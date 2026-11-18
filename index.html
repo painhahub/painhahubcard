@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>painhahaha - Telegram-боты, парсеры, автоматизация</title>
+<meta name="description" content="Разработчик painhahaha. Telegram-боты, парсеры и сбор данных, скрипты и автоматизация, сайты-визитки под ключ.">
+<meta name="theme-color" content="#08080A">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="painhahaha - разработчик">
+<meta property="og:description" content="Telegram-боты, парсеры, скрипты и автоматизация.">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://painhahub.github.io/painhahubcard/">
+<link rel="canonical" href="https://painhahub.github.io/painhahubcard/">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2308080A'/%3E%3Ctext x='16' y='23' font-family='system-ui,sans-serif' font-size='17' font-weight='700' fill='%23FFFFFF' text-anchor='middle'%3Ep%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas class="sky" id="sky-base" aria-hidden="true"></canvas>
+<canvas class="sky" id="sky" aria-hidden="true"></canvas>
+
+<!-- Созвездие: звёзды, которые при наведении на небо складываются в имя. -->
+<canvas class="constellation" id="constellation" aria-hidden="true"></canvas>
+
+<nav class="rail" aria-label="Разделы страницы">
+  <a class="rail__link" href="#contact">
+    <span class="rail__dot" aria-hidden="true"></span>
+    <span class="rail__text">Связь</span>
+  </a>
+  <a class="rail__link" href="#work">
+    <span class="rail__dot" aria-hidden="true"></span>
+    <span class="rail__text">Возможности</span>
+  </a>
+  <a class="rail__link" href="#process">
+    <span class="rail__dot" aria-hidden="true"></span>
+    <span class="rail__text">Этапы работы</span>
+  </a>
+  <a class="rail__link" href="#contacts">
+    <span class="rail__dot" aria-hidden="true"></span>
+    <span class="rail__text">Контакты</span>
+  </a>
+</nav>
+
+<main class="card">
+
+  <header class="hero">
+    <p class="hero__label">Разработчик</p>
+    <h1 class="hero__title">painhahaha</h1>
+    <p class="hero__sub">Telegram-боты, парсеры, скрипты и автоматизация.</p>
+    <ul class="hero__tags">
+      <li class="pill">Python</li>
+      <li class="pill">Telegram</li>
+      <li class="pill">Automation</li>
+    </ul>
+  </header>
+
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <h2 class="section__title" id="contact-title">Связь</h2>
+    <p class="section__hint">Напишите - отвечу и обсудим задачу</p>
+
+    <div class="contacts">
+
+      <a class="link" href="https://t.me/porngiant" data-link="telegram" target="_blank" rel="noopener">
+        <span class="link__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+          </svg>
+        </span>
+        <span class="link__text">
+          <span class="link__name">Telegram</span>
+          <span class="link__note">написать</span>
+        </span>
+      </a>
+
+      <a class="link" href="https://github.com/painhahub" data-link="github" target="_blank" rel="noopener">
+        <span class="link__icon" aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </span>
+        <span class="link__text">
+          <span class="link__name">GitHub</span>
+          <span class="link__note">проекты</span>
+        </span>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="section" id="work" aria-labelledby="work-title">
+    <h2 class="section__title" id="work-title">Возможности</h2>
+    <p class="section__hint">Нажмите на направление - покажу стек</p>
+
+    <div class="services" id="services">
+
+      <article class="service">
+        <h3 class="service__heading">
+          <button class="service__head" type="button" id="service-head-1" aria-expanded="false" aria-controls="service-1">
+            <span class="service__title">Telegram-боты</span>
+            <span class="service__mark" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="service__panel" id="service-1" role="region" aria-labelledby="service-head-1">
+          <div class="service__inner">
+            <p class="service__text">Запись клиентов, воронки, приём оплаты, админ-панели, рассылки. От идеи до готового бота.</p>
+            <ul class="service__tags">
+              <li class="service__tag">Python</li>
+              <li class="service__tag">aiogram 3</li>
+              <li class="service__tag">SQLite</li>
+              <li class="service__tag">FSM</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="service">
+        <h3 class="service__heading">
+          <button class="service__head" type="button" id="service-head-2" aria-expanded="false" aria-controls="service-2">
+            <span class="service__title">Парсеры и сбор данных</span>
+            <span class="service__mark" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="service__panel" id="service-2" role="region" aria-labelledby="service-head-2">
+          <div class="service__inner">
+            <p class="service__text">Сбор товаров, цен и контактов с сайтов и маркетплейсов. Выгрузка в Excel и Google Sheets, обновление по расписанию.</p>
+            <ul class="service__tags">
+              <li class="service__tag">Python</li>
+              <li class="service__tag">requests</li>
+              <li class="service__tag">BeautifulSoup</li>
+              <li class="service__tag">Playwright</li>
+              <li class="service__tag">pandas</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="service">
+        <h3 class="service__heading">
+          <button class="service__head" type="button" id="service-head-3" aria-expanded="false" aria-controls="service-3">
+            <span class="service__title">Скрипты и автоматизация</span>
+            <span class="service__mark" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="service__panel" id="service-3" role="region" aria-labelledby="service-head-3">
+          <div class="service__inner">
+            <p class="service__text">Рутинные операции, обработка Excel и CSV, отчёты, интеграции между сервисами. Экономит часы ручной работы.</p>
+            <ul class="service__tags">
+              <li class="service__tag">Python</li>
+              <li class="service__tag">openpyxl</li>
+              <li class="service__tag">pandas</li>
+              <li class="service__tag">API</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="service">
+        <h3 class="service__heading">
+          <button class="service__head" type="button" id="service-head-4" aria-expanded="false" aria-controls="service-4">
+            <span class="service__title">Сайты и лендинги</span>
+            <span class="service__mark" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="service__panel" id="service-4" role="region" aria-labelledby="service-head-4">
+          <div class="service__inner">
+            <p class="service__text">Визитки и промо-страницы: адаптив под телефон, быстрая загрузка, аккуратная типографика.</p>
+            <ul class="service__tags">
+              <li class="service__tag">HTML</li>
+              <li class="service__tag">CSS</li>
+              <li class="service__tag">JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="service">
+        <h3 class="service__heading">
+          <button class="service__head" type="button" id="service-head-5" aria-expanded="false" aria-controls="service-5">
+            <span class="service__title">Боты-ассистенты</span>
+            <span class="service__mark" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="service__panel" id="service-5" role="region" aria-labelledby="service-head-5">
+          <div class="service__inner">
+            <p class="service__text">Модерация чатов, автопостинг, напоминания, поддержка клиентов в переписке.</p>
+            <ul class="service__tags">
+              <li class="service__tag">Python</li>
+              <li class="service__tag">aiogram 3</li>
+              <li class="service__tag">Telegram Bot API</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="process" aria-labelledby="process-title">
+    <h2 class="section__title" id="process-title">Этапы работы</h2>
+    <ol class="steps">
+      <li class="step">
+        <span class="step__num" aria-hidden="true">1</span>
+        <span class="step__body">
+          <span class="step__title">Обсуждаем задачу</span>
+          <span class="step__text">Что нужно, какие сроки, что уже есть.</span>
+        </span>
+      </li>
+      <li class="step">
+        <span class="step__num" aria-hidden="true">2</span>
+        <span class="step__body">
+          <span class="step__title">Собираю рабочую версию</span>
+          <span class="step__text">Показываю промежуточный результат, правлю по ходу.</span>
+        </span>
+      </li>
+      <li class="step">
+        <span class="step__num" aria-hidden="true">3</span>
+        <span class="step__body">
+          <span class="step__title">Передаю и объясняю</span>
+          <span class="step__text">Отдаю готовый проект, показываю, как пользоваться, остаюсь на связи.</span>
+        </span>
+      </li>
+    </ol>
+  </section>
+
+  <footer class="footer" id="contacts">
+    <p class="footer__brand">painhahaha · <span id="year">2026</span></p>
+    <p class="footer__links">
+      <a href="https://t.me/porngiant" data-link="telegram" target="_blank" rel="noopener">Telegram</a>
+      <span class="footer__sep" aria-hidden="true">·</span>
+      <a href="https://github.com/painhahub" data-link="github" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+
+</main>
+
+<aside class="side" aria-label="Быстрый контакт">
+  <div class="side__card">
+    <p class="side__status">
+      <span class="side__pulse" aria-hidden="true"></span>
+      открыт к задачам
+    </p>
+    <p class="side__note">Telegram-боты, парсеры, автоматизация. Отвечаю в течение дня.</p>
+    <a class="side__button" href="https://t.me/porngiant" data-link="telegram" target="_blank" rel="noopener">написать</a>
+    <figure class="side__qr">
+      <canvas class="side__swirl" id="side-swirl" aria-hidden="true"></canvas>
+      <img class="side__qr-img" src="assets/tg-qr.png" alt="QR-код Telegram" width="640" height="640" loading="lazy" decoding="async">
+      <figcaption>наведи курсор — соберётся код</figcaption>
+    </figure>
+  </div>
+
+  <div class="term" aria-hidden="true">
+    <div class="term__bar"><span></span><span></span><span></span></div>
+    <pre class="term__body" id="term"></pre>
+  </div>
+</aside>
+
+<p class="astro" aria-hidden="true">
+  <span id="astro-date">--.--.----</span>
+  <span class="astro__sep">/</span>
+  <span id="astro-time">--:--</span>
+  <span class="astro__sep">/</span>
+  <span>Млечный Путь</span>
+</p>
+
+<script src="app.js"></script>
+</body>
+</html>
